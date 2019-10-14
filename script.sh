@@ -14,5 +14,6 @@ sudo apt -y install git
 git clone git://github.com/ipfs/go-ipfs.git
 cd go-ipfs
 make install
+cat ~/.bashrc | grep 'PATH=$PATH:~/go/bin' || echo 'PATH=$PATH:~/go/bin' >> ~/.bashrc
 
 
